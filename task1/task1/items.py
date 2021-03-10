@@ -13,7 +13,3 @@ class Task1Item(scrapy.Item):
     price = scrapy.Field()
     manf = scrapy.Field()
     instock = scrapy.Field()
-
-
-# class Getproxies(scrapy.Item):
-#     proxy = scrapy.Field()
