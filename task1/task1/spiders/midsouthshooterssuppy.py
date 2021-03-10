@@ -30,19 +30,3 @@ class Spidera(scrapy.Spider):
             items['instock'] = instock
 
             yield items
-
-
-# class ProxySpider(scrapy.Spider):
-#     name = 'proxyspider'
-#     allowed_domains = ['http://www.freeproxylists.net/']
-#     start_urls = ['http://www.freeproxylists.net/',
-#                   ]
-#
-#     def parse(self, response, **kwargs):
-#         proxies = Getproxies()
-#
-#         proxy = response.css('.Even a , .Odd td:nth-child(1)').extract()
-#
-#         proxies['proxy'] = proxy
-#
-#         yield proxies
